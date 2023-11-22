@@ -1,0 +1,37 @@
+{
+    "name": "enna/enna-trace",
+    "description": "enna debug trace",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "enna",
+            "email": "w1069103107@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "enna/framework": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "E:\\code\\framework"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Enna\\Trace\\": "src/"
+        }
+    },
+    "extra":{
+        "enna": {
+            "services":[
+                "Enna\\Trace\\Service"
+            ],
+            "config": {
+                "trace":"src/config.php"
+            },
+        }
+    }
+}
